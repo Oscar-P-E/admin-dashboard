@@ -1,0 +1,14 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "sidebar    header      header"
+        "sidebar    content     content"
+        "sidebar    content     content";
+}
+
+header  { grid-area: header; }
+nav     { grid-area: sidebar; }
+article { grid-area: content; }
+
