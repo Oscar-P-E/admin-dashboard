@@ -10,6 +10,13 @@
 
 header {
   grid-area: header;
+  display: grid;
+}
+
+.h-top-row,
+.h-bot-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
