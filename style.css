@@ -10,11 +10,12 @@
 
 header {
   grid-area: header;
-  /* list-style: none; */
 }
 
 nav {
   grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
 }
 
 nav li {
