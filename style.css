@@ -1,3 +1,9 @@
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -23,12 +29,57 @@ nav {
   grid-area: sidebar;
   display: flex;
   flex-direction: column;
+  background-color: rgb(31, 155, 228);
+  color: white;
 }
 
 nav li {
   list-style: none;
+  font-size: 1.33rem;
+  line-height: 2;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+nav .logo li {
+  font-size: 2rem;
 }
 
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  background-color: rgb(233, 233, 233);
+}
+
+.articles {
+  margin: 16px;
+}
+
+.article-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  grid-auto-rows: 200px;
+  gap: 32px;
+}
+
+.article-cards .card {
+  border-left: 8px solid orange;
+  border-radius: 8px;
+  background-color: white;
+  padding: 24px;
+  display: grid;
+  align-content: center;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.aside {
+  display: grid;
 }
