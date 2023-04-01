@@ -38,7 +38,7 @@ nav li {
   font-size: 1.33rem;
   line-height: 2;
   font-weight: bold;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 nav .logo li {
@@ -50,10 +50,11 @@ main {
   display: grid;
   grid-template-columns: 5fr 2fr;
   background-color: rgb(233, 233, 233);
+  padding: 24px;
 }
 
-.articles {
-  margin: 16px;
+main h2 {
+  font-size: 1.33rem;
 }
 
 .article-cards {
@@ -65,6 +66,9 @@ main {
 
 .article-cards .card {
   border-left: 8px solid orange;
+}
+
+main .card {
   border-radius: 8px;
   background-color: white;
   padding: 24px;
@@ -82,4 +86,12 @@ main {
 
 .aside {
   display: grid;
+}
+
+.announcements-card {
+  background-color: white;
+}
+
+.trending-card {
+  background-color: white;
 }
