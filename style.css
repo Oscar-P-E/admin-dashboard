@@ -59,8 +59,8 @@ main h2 {
 
 .article-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-auto-rows: 225px;
   gap: 32px;
 }
 
