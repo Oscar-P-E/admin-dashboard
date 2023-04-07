@@ -107,6 +107,18 @@ main .card {
   margin: 0 0 0.4em 0;
 }
 
+.article-card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.article-card-button {
+  height: 21px;
+  width: 21px;
+  margin-top: 21px;
+}
+
 .aside {
   display: grid;
   font-size: 0.9rem;
