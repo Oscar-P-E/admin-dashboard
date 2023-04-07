@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
     <title>Admin Dashboard</title>
   </head>
@@ -15,20 +16,24 @@
       <header>
         <div class="h-top-row">
           <div class="search-container">
-            <img src="img/magnifier.jpg" alt="Search Icon" class="search-icon"></img>
-            <span class="search-bar">Search Bar</span>
+            <span class="iconify magnify" data-icon="mdi-magnify" alt="Search Icon"></span>
+            <span class="search-bar">
+              <input type="text" placeholder="Search" id="search-input">
+            </span>
           </div>
           <div class="user-container">
-            <img src="img/bell.jpg" alt="Bell Icon" class="bell-icon">Bell</img>
-            <img src="img/small-user-dp.jpg" alt="Small User DP" class="small-user-dp"></img>
+            <span class="iconify bell" data-icon="mdi-bell-ring-outline" alt="Bell"></span>
+
+            <!-- <img src="img/bell.jpg" alt="Bell Icon" class="bell-icon">Bell</img> -->
+            <img src="img/user-dp-1.jpg" alt="Small User DP" class="small-user-dp"></img>
             <span class="user-name">John Doe</span>
           </div>
         </div> <!-- /h-top-row -->
         <div class="h-bot-row">
           <div class="user-welcome-container">
-            <img src="img/large-user-dp.jpg" alt="Large User DP" class="large-user-dp"></img>
+            <img src="img/user-dp-1.jpg" alt="Large User DP" class="large-user-dp"></img>
             <span class="hello-text">Hi there,</span>
-            <span class="large-user-name">John Doe (@John)</span>
+            <span class="large-user-name">John Doe (@john)</span>
           </div>
           <div class="buttons">
             <button class="btn btn-new">New</button>
@@ -40,24 +45,24 @@
       <nav>
         <div class="logo">
           <ul>
-            <li>Dashboard</li>
+            <li><span class="iconify logo-icon" data-icon="mdi-view-dashboard" alt="Dashboard"></span> Dashboard</li>
           </ul>
         </div>
         <div class="nav-links-1">
           <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-home" alt="Home"></span>Home</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-card-account-details-outline" alt="Profile"></span>Profile</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-message" alt="Messages"></span>Messages</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-clock-time-three" alt="History"></span>History</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-note-multiple" alt="Tasks"></span>Tasks</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-account-group" alt="Communities"></span>Communities</li>
           </ul>
         </div> <!-- /nav-links-1 -->
         <div class="nav-links-2">
           <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-cog" alt="Settings"></span>Settings</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-help-box" alt="Support"></span>Support</li>
+            <li><span class="iconify nav-icons" data-icon="mdi-shield-check" alt="Privacy"></span>Privacy</li>
           </ul>
         </div> <!-- /nav-links-2 -->
       </nav>
@@ -99,13 +104,46 @@
             <div class="announcements-heading">
               <h2>Anouncements</h2>
             </div>
-            <div class="card">aaa</div>
+            <div class="card">
+              <h3>Site Maintenance</h3>
+              <p>This site is always down or out-of-order. The speed limit is 40km/h even on the freeway, for your own good.</p>
+            <hr>
+            <h3>Community Share Day</h3>
+            <p>All your base are belong to us. You will be taxed 50% of your income</p>
+            <hr>
+<h3>Updated Privacy Policy</h3>
+<p>All your data belongs to us. Anything you say or do will be used against you if you cause any trouble.</p>
+            </div>
           </div>
           <div class="trending">
             <div class="trending-heading">
               <h2>Trending</h2>
             </div>
-            <div class="card">bbb</div>
+            <div class="card">
+              <div class="trending-item">
+                <img src="img/user-dp-2.jpg" alt="Small User DP" class="small-user-dp"></img>
+                <span class="user-tag">@tegan</span>
+                <span class="project-name">World Peace Builder</span>
+              </div>
+              <div class="trending-item">
+                <img src="img/user-dp-1.jpg" alt="Small User DP" class="small-user-dp"></img>
+                <span class="user-tag">@john</span>
+                <span class="project-name">Super Cool Project</span>
+
+              </div>
+              <div class="trending-item">
+                <img src="img/user-dp-3.jpg" alt="Small User DP" class="small-user-dp"></img>
+                <span class="user-tag">@kendall</span>
+                <span class="project-name">Oober Gardener App</span>
+
+              </div>
+              <div class="trending-item">
+                <img src="img/user-dp-4.jpg" alt="Small User DP" class="small-user-dp"></img>
+                <span class="user-tag">@alex</span>
+                <span class="project-name">No Traffic Maker</span>
+
+              </div>
+            </div>
           </div>
         </div> <!-- /aside -->
       </main>
